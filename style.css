@@ -68,7 +68,7 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     body {
         background-image: url(./assets/images/background-pattern-mobile.svg);
     }
