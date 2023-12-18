@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color:hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 20px;
+    width: 550px
+}
+
+.headingFAQ {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 50px;
+    color: hsl(292, 42%, 14%);
+    margin-bottom: 20px;
+}
+
+.faq {
+    transform: translateY(-5px);
+    margin-left: 15px;
+}
+
+.commonForAll {
+    color: hsl(292, 42%, 14%);
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 50px
+}
+
+.hidden {
+    display: none;
+}
+
+.descripCommon {
+    margin-top: -20px;
+    margin-bottom: 30px;
+    width: 500px;
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+}
+
+.content1:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        background-image: url(./assets/images/background-pattern-mobile.svg);
+    }
+
+    .container {
+        background-color:hsl(0, 0%, 100%);
+        padding: 30px;
+        border-radius: 20px;
+        width: 320px;
+    }
+
+    .descripCommon {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 275px;
+        font-weight: 400;
+        color: hsl(292, 16%, 49%);
+    }
+}
